@@ -20,13 +20,13 @@ function App() {
       <h1>Login Page</h1>
       {isSubmitted ? (
         <div>
-          <p>Welcome, {username}</p>
+          <p>Welcome, {username}!</p>
         </div>
       ) : (
         <form onSubmit={handleSubmit}>
           {error && <p>{error}</p>}
           <div>
-            <label htmlFor="username">username:</label>
+            <label htmlFor="username">Username:</label>
             <input
               type="text"
               id="username"
@@ -37,7 +37,7 @@ function App() {
             />
           </div>
           <div>
-            <label htmlFor="password">username:</label>
+            <label htmlFor="password">Password:</label>
             <input
               type="text"
               id="password"
